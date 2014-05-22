@@ -1,5 +1,7 @@
 require "google_drive"
 
+Session = GoogleDrive.login(ENV['GOOGLE_USER'], ENV['GOOGLE_PASS'])
+
 class SpreadsheetWriter 
   attr_reader :worksheet, :row, :rows, :spreadsheet
  
